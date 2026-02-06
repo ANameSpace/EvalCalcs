@@ -5,6 +5,6 @@
     stdout.write("Введите выражение: ");
     final input = stdin.readLineSync() ?? "";
     calculate(input)
-      .then((result) => print(result))
+      .then((result) => print("Ответ: $result"))
       .catchError((error) => print("[!] $error"));
   }
